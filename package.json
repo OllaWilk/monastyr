@@ -1,0 +1,28 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "wspolnota swietego krzysztofa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OllaWilk/monastyr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OllaWilk/monastyr/issues"
+  },
+  "homepage": "https://github.com/OllaWilk/monastyr#readme",
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "page": "^1.11.6"
+  }
+}
