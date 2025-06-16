@@ -4,6 +4,7 @@
   "description": "wspolnota swietego krzysztofa",
   "main": "index.js",
   "scripts": {
+    "dev": "npx sass scss/index.scss css/main.css --watch ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +12,7 @@
     "url": "git+https://github.com/OllaWilk/monastyr.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aleksandra Wilk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OllaWilk/monastyr/issues"

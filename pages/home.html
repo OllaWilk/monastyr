@@ -1,48 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Monastyr – Strona główna</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-<!-- NAVBAR (wklejasz identyczny we wszystkich plikach) -->
-   <nav class="navbar navbar-expand-lg px-3 custom-nav">
-    <div class="container">
+    <!-- NAVBAR (wklejasz identyczny we wszystkich plikach) -->
+    <nav class="navbar navbar-expand-lg px-3 custom-nav">
+      <div class="container">
         <!-- LOGO  -->
-        <a class="logo-wrap " href="home.html">
-            <img src="../assets/img/wspolnota swietego krzysztofa logo.jpg" alt="Wspólnota Świętego Krzysztofa" class="d-inline-block align-text-top">
+        <a class="logo-wrap" href="home.html">
+          <img
+            src="../assets/img/wspolnota swietego krzysztofa logo.jpg"
+            alt="Wspólnota Świętego Krzysztofa"
+            class="d-inline-block align-text-top"
+          />
         </a>
 
         <!-- HAMBURGER  -->
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- LINKI  -->
         <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="o-nas.html">O nas</a></li>
-            <li class="nav-item"><a class="nav-link" href="duchowosc.html">Duchowość</a></li>
-            <li class="nav-item"><a class="nav-link" href="charyzmat.html">Charyzmat</a></li>
-            <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
-            <li class="nav-item"><a class="nav-link" href="pytania.html">Pytania</a></li>
-            <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
-            </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="o-nas.html">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="duchowosc.html">Duchowość</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="charyzmat.html">Charyzmat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pytania.html">Pytania</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+          </ul>
         </div>
-              <div class="btn btn-primary" >
-                <span>Intencje</span>
-              </div>
-    </div>
-</nav>
+        <div class="btn btn-primary">
+          <span>Intencje</span>
+        </div>
+      </div>
+    </nav>
 
-   
     <!-- Sekcja Hero -->
     <header class="hero">
       <div class="container text-center">
@@ -53,26 +76,74 @@
     </header>
 
     <!-- Sekcje O nas / Duchowość / … -->
-    <section id="o-nas" class="about py-5">
+    <section id="home" class="about py-5">
       <div class="container">
         <h2>O nas</h2>
-          <div class="d-flex gap-3 flex-wrap">
-            <button class="btn btn-primary" >Primary</button>
-            <button class="btn btn-secondary " >Secondary</button>
-            <button class="btn btn-outline" >Outline</button>
-            <button class="btn" disabled>Disabled</button>
-            <button class="btn btn-underline" >Underline</button>
+        <div class="d-flex gap-3 flex-wrap">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-secondary">Secondary</button>
+          <button class="btn btn-outline">Outline</button>
+          <button class="btn" disabled>Disabled</button>
+          <button class="btn btn-underline">Underline</button>
         </div>
-        <p>Wspólnota Świętego Krzysztofa to grupa ludzi, którzy pragną żyć w duchu miłości i służby. Naszym celem jest wspieranie się nawzajem w drodze do świętości.</p>
       </div>
-      
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Inputs</h2>
+        <div
+          class="grid"
+          style="flex-direction: column; gap: 2rem; max-width: 320px"
+        >
+          <!-- Default -->
+          <div class="input-group">
+            <label class="label">Default</label>
+            <input type="text" placeholder="Placeholder" />
+            <span class="helper">Helper text</span>
+          </div>
+          <!-- Hover -->
+          <div class="input-group">
+            <label class="label">Hover</label>
+            <input
+              type="text"
+              placeholder="Placeholder"
+              style="border-color: #c7ab6c"
+            />
+            <span class="helper">Helper text</span>
+          </div>
+          <!-- Active -->
+          <div class="input-group">
+            <label class="label">Active</label>
+            <input
+              type="text"
+              placeholder="Placeholder"
+              style="border-color: #c7ab6c"
+            />
+            <span class="helper">Helper text</span>
+          </div>
+          <!-- Error -->
+          <div class="input-group error">
+            <label class="label">Error</label>
+            <input type="text" placeholder="Placeholder" class="error" />
+            <span class="helper">Helper text</span>
+          </div>
+          <!-- Disabled -->
+          <div class="input-group">
+            <label class="label">Disabled</label>
+            <input type="text" placeholder="Placeholder" disabled />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- STOPKA -->
     <footer class="bg-dark text-white py-4">
-       <div class="container text-center">&copy; 2025 Monastyr</div>
+      <div class="container text-center">&copy; 2025 Monastyr</div>
     </footer>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
     <script src="../js/main.js" defer></script>
   </body>
 </html>

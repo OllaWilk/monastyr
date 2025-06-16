@@ -2,5 +2,6 @@
 @use "../node_modules/bootstrap/scss/bootstrap" as *;
 @use "main";       
 @use "components/buttons";
+@use "components/inputs";
 @use "components/navbar";
 @use "pages/home.scss";
