@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg px-3 custom-nav">
       <div class="container">
         <!-- LOGO  -->
-        <a class="logo-wrap" href="home.html">
+        <a class="logo-wrap "  href="home.html">
           <img
             src="../assets/img/wspolnota swietego krzysztofa logo.jpg"
             alt="Wspólnota Świętego Krzysztofa"
@@ -26,7 +26,7 @@
 
         <!-- HAMBURGER  -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler collapsed  "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#menu"
@@ -38,8 +38,17 @@
         </button>
 
         <!-- LINKI  -->
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="
+            collapse navbar-collapse
+            flex-column flex-lg-row
+            align-items-center
+            gap-3
+            justify-content-lg-end
+        " 
+        id="menu">
+          <ul class="navbar-nav flex-column flex-lg-row
+             align-items-center my-3 my-lg-0         
+             me-lg-3">
             <li class="nav-item">
               <a class="nav-link" href="o-nas.html">O nas</a>
             </li>
@@ -59,9 +68,13 @@
               <a class="nav-link" href="kontakt.html">Kontakt</a>
             </li>
           </ul>
-        </div>
-        <div class="btn btn-primary">
-          <span>Intencje</span>
+          <!-- CTA  -->
+          <div class="btn btn-primary intencion
+                 d-block d-lg-inline-block
+                 mx-auto mx-lg-0         
+                 my-4 my-lg-0">
+            <span>Intencje</span>
+          </div>
         </div>
       </div>
     </nav>
