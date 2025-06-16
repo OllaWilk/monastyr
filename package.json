@@ -4,8 +4,9 @@
   "description": "wspolnota swietego krzysztofa",
   "main": "index.js",
   "scripts": {
-    "dev": "npx sass scss/index.scss css/main.css --watch ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",                      
+    "build": "vite build",             
+    "preview": "vite preview"    
   },
   "repository": {
     "type": "git",

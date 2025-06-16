@@ -3,7 +3,17 @@ export default {
   resolve: {
     alias: {
       bootstrap: resolve(__dirname, 'node_modules/bootstrap')   // ⬅️ alias
-    }
+    },
+     base: '/',     
+     build: {
+      outDir: '../dist',
+      rollupOptions: {
+        input: {
+          main:  resolve(__dirname,'index.html'),
+        
+        }
+      }
+  }
   }
 };
 // This configuration sets up an alias for the Bootstrap library in a Vite project.
