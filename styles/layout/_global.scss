@@ -1,4 +1,4 @@
-@use "settings" as s;
+﻿@use "settings" as s;
 
 *,
 ::before,
@@ -19,7 +19,7 @@ body {
 
 
 
-h1, h2, h3{ font-family: s.$font-head; color: s.$primary-color; }
+h1, h2, h3, h4, h5, h6 { font-family: s.$font-head; color: s.$primary-color; }
 
 a {
     text-decoration: none;

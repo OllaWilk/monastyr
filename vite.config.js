@@ -1,12 +1,14 @@
 import { resolve } from 'path';
+
+
 export default {
+  base: '/monastyr/',     
   resolve: {
     alias: {
       bootstrap: resolve(__dirname, 'node_modules/bootstrap')   // ⬅️ alias
     },
-     base: '/',     
      build: {
-      outDir: '../dist',
+      outDir: './dist',
       rollupOptions: {
         input: {
           main:  resolve(__dirname,'index.html'),

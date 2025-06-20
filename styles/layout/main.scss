@@ -1,7 +1,8 @@
-﻿@use "settings";  
+@use "settings";  
 @use "../node_modules/bootstrap/scss/bootstrap" as *;
-@use "main";       
+@use "global";       
 @use "components/buttons";
 @use "components/inputs";
 @use "components/navbar";
-@use "pages/home.scss";
+@use "pages/home";
+

@@ -9,21 +9,20 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
-    <!-- NAVBAR (wklejasz identyczny we wszystkich plikach) -->
+    <!-- NAVBAR  -->
     <nav class="navbar navbar-expand-lg px-3 custom-nav">
       <div class="container">
         <!-- LOGO  -->
-        <a class="logo-wrap "  href="home.html">
+        <a class="logo-wrap "  href="/">
           <img
             src="../assets/img/wspolnota swietego krzysztofa logo.jpg"
             alt="Wspólnota Świętego Krzysztofa"
             class="d-inline-block align-text-top"
           />
         </a>
-
         <!-- HAMBURGER  -->
         <button
           class="navbar-toggler collapsed  "
@@ -36,7 +35,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <!-- LINKI  -->
         <div class="
             collapse navbar-collapse
@@ -80,15 +78,28 @@
     </nav>
 
     <!-- Sekcja Hero -->
-    <header class="hero">
-      <div class="container text-center">
-        <h1 class="display-4">Wspólnota Świętego Krzysztofa</h1>
-        <p class="lead">Motto duchowe lub cytat</p>
-        <a href="kontakt.html" class="btn btn-primary">Skontaktuj się</a>
-      </div>
-    </header>
+      <header class="splash container">
+         <div class="img-wrap">
+          <img src="./assets/img/sw.Krzysztof_barok.png" alt="św. Krzysztof" class="img-fluid mb-3" />
+        </div>
+        <div class="splash-inner container">
+          <h1 class="page-title">
+           Codzienność  <br>
+           w rytmie 
+            <br>
+            modlitwy
+          </h1>
+          <div class="logo mb-3">
+            <!-- <img src="./assets/img/wspolnota swietego krzysztofa logo.jpg" alt=""> -->
+            <p class="lead">Wspólnota Świętego Krzysztofa</p>
+          </div>
+          <a href="kontakt.html" class="btn btn-primary">Skontaktuj się</a>
 
-    <!-- Sekcje O nas / Duchowość / … -->
+        </div>
+       
+      </header>
+
+    <!-- Sekcje home -->
     <section id="home" class="about py-5">
       <div class="container">
         <h2>O nas</h2>
