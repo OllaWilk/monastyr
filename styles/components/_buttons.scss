@@ -1,10 +1,10 @@
-@use '../settings.scss' as s;
+@use '../variables.scss' as v;
 
 %btn-base {
-  font-family: s.$font-body;
+  font-family:v.$font-body;
   padding: calc(0.5*1.5) calc(2rem);
   font-size: .875rem;
-  border-radius: s.$border-radius;
+  border-radius:v.$border-radius;
   border: 2px solid transparent;
   cursor: pointer;
   transition: background .3s, color .3s, border-color .3s;
@@ -12,54 +12,55 @@
 
 .btn-primary {
   @extend %btn-base;
-  background: s.$primary-color;
-  color: s.$black-color;
+  background:v.$primary-color;
+  color:v.$black-color;
+  width: 30vw;
 
-  &:hover   { background: s.$gold-color-light;   border: 2px solid transparent; color: s.$black-color;}
-  &:focus   { outline: 2px solid s.$gold-color-light; outline-offset: 2px; }
-  &:disabled{ background: s.$light-grey-color; color: s.$black-color; cursor: not-allowed;  border: 2px solid  s.$light-grey-color;}
+  &:hover   { background:v.$gold-color-light;   border: 2px solid transparent; color:v.$black-color;}
+  &:focus   { outline: 2px solid v.$gold-color-light; outline-offset: 2px; }
+  &:disabled{ background:v.$light-grey-color; color:v.$black-color; cursor: not-allowed;  border: 2px solid v.$light-grey-color;}
 }
 
 .btn-secondary {
   @extend %btn-base;
   background: transparent;
-  border-color: s.$primary-color;
-  color: s.$primary-color;
+  border-color:v.$primary-color;
+  color:v.$primary-color;
 
-  &:hover   { background: transparent; color: s.$gold-color-light;  border: 2px solid s.$gold-color-light; }
-  &:focus   { outline: 2px solid s.$gold-color; outline-offset: 2px; }
-  &:disabled{ border-color: s.$light-grey-color; color: s.$light-grey-color; }
+  &:hover   { background: transparent; color:v.$gold-color-light;  border: 2px solid v.$gold-color-light; }
+  &:focus   { outline: 2px solid v.$gold-color; outline-offset: 2px; }
+  &:disabled{ border-color:v.$light-grey-color; color:v.$light-grey-color; }
 }
 
 .btn-tertiary {
   @extend %btn-base;
   background: transparent;
-  color: s.$light-color;
+  color:v.$light-color;
   text-decoration: underline;
 
-  &:hover   { color: s.$gold-color; }
-  &:focus   { outline: 2px solid s.$gold-color; outline-offset: 2px; }
-  &:disabled{ color: s.$light-grey-color; text-decoration: none; }
+  &:hover   { color:v.$gold-color; }
+  &:focus   { outline: 2px solid v.$gold-color; outline-offset: 2px; }
+  &:disabled{ color:v.$light-grey-color; text-decoration: none; }
 }
 
 .btn-outline {
     @extend %btn-base;
     background: transparent;
-    color: s.$primary-color;
+    color:v.$primary-color;
     
-    &:hover   { background: s.$primary-color; color: s.$black-color; }
-    &:focus   { outline: 2px solid s.$gold-color; outline-offset: 2px; }
-    &:disabled{ background: s.$light-grey-color; color: s.$black-color; cursor: not-allowed; border: 2px solid s.$light-grey-color; }
+    &:hover   { background:v.$primary-color; color:v.$black-color; }
+    &:focus   { outline: 2px solid v.$gold-color; outline-offset: 2px; }
+    &:disabled{ background:v.$light-grey-color; color:v.$black-color; cursor: not-allowed; border: 2px solid v.$light-grey-color; }
 }
 
 .btn-underline {
   @extend %btn-base;
   background: transparent;
-  color: s.$primary-color;
-  border-bottom: 1px solid s.$primary-color;
+  color:v.$primary-color;
+  border-bottom: 1px solid v.$primary-color;
   border-radius: 0;
 
-  &:hover   { color: s.$gold-color-light; }
-  &:focus   { outline: 2px solid s.$gold-color-light; outline-offset: 2px; }
-  &:disabled{ color: s.$light-grey-color; text-decoration: none; border: none }
+  &:hover   { color:v.$gold-color-light; }
+  &:focus   { outline: 2px solid v.$gold-color-light; outline-offset: 2px; }
+  &:disabled{ color:v.$light-grey-color; text-decoration: none; border: none }
 }

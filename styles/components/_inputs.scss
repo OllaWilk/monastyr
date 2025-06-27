@@ -1,28 +1,28 @@
-@use "../settings.scss" as s;
+@use "../variables.scss" as v;
 
 .input-group {
   display: flex;
   flex-direction: column;
   gap: .25rem;
-  font-family: s.$font-body;
+  font-family:v.$font-body;
 
-  .label   { font-size: .75rem; color: s.$light-color; }
-  .helper  { font-size: .75rem; color: s.$light-grey-color; margin-top:.25rem; }
+  .label   { font-size: .75rem; color:v.$light-color; }
+  .helper  { font-size: .75rem; color:v.$light-grey-color; margin-top:.25rem; }
 
   input {
-    background: s.$black-color;
-    border: 2px solid s.$light-grey-color;
-    color: s.$light-color;
+    background:v.$black-color;
+    border: 2px solid v.$light-grey-color;
+    color:v.$light-color;
     padding: .75rem 1rem;
     border-radius: 0;
     transition: border-color .3s;
 
-    &::placeholder { color: s.$light-grey-color; }
-    &:hover        { border-color: s.$primary-color; }
-    &:focus        { border-color: s.$primary-color; outline: none; }
-    &.error        { border-color: s.$danger-color; }
-    &:disabled     { background: s.$black-color; color: s.$light-grey-color; }
+    &::placeholder { color:v.$light-grey-color; }
+    &:hover        { border-color:v.$primary-color; }
+    &:focus        { border-color:v.$primary-color; outline: none; }
+    &.error        { border-color:v.$danger-color; }
+    &:disabled     { background:v.$black-color; color:v.$light-grey-color; }
   }
 
-  &.error .helper { color: s.$danger-color; }
+  &.error .helper { color:v.$danger-color; }
 }

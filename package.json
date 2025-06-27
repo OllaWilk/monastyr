@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",    
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -27,7 +27,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "bootstrap": "^5.3.6",
+    "bootstrap": "^5.3.7",
     "page": "^1.11.6"
   }
 }

@@ -3,29 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <title>Monastyr – Strona główna</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand-lg px-3 custom-nav">
       <div class="container">
         <!-- LOGO  -->
-        <a class="logo-wrap "  href="/">
+        <a class="logo-wrap" href="/">
           <img
-            src="../assets/img/wspolnota swietego krzysztofa logo.jpg"
+            src="/img/wspolnota swietego krzysztofa logo.jpg"
             alt="Wspólnota Świętego Krzysztofa"
             class="d-inline-block align-text-top"
           />
         </a>
         <!-- HAMBURGER  -->
         <button
-          class="navbar-toggler collapsed  "
+          class="navbar-toggler collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#menu"
@@ -36,125 +29,154 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- LINKI  -->
-        <div class="
-            collapse navbar-collapse
-            flex-column flex-lg-row
-            align-items-center
-            gap-3
-            justify-content-lg-end
-        " 
-        id="menu">
-          <ul class="navbar-nav flex-column flex-lg-row
-             align-items-center my-3 my-lg-0         
-             me-lg-3">
+        <div
+          class="collapse navbar-collapse flex-column flex-lg-row align-items-center gap-3 justify-content-lg-end"
+          id="menu"
+        >
+          <ul
+            class="navbar-nav flex-column flex-lg-row align-items-center my-3 my-lg-0 me-lg-3"
+          >
             <li class="nav-item">
-              <a class="nav-link" href="o-nas.html">O nas</a>
+              <a class="nav-link" href="/o-nas.html">O nas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="duchowosc.html">Duchowość</a>
+              <a class="nav-link" href="/duchowosc.html">Duchowość</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="charyzmat.html">Charyzmat</a>
+              <a class="nav-link" href="/charyzmat.html">Charyzmat</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="historia.html">Historia</a>
+              <a class="nav-link" href="/historia.html">Historia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pytania.html">Pytania</a>
+              <a class="nav-link" href="/pytania.html">Pytania</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kontakt.html">Kontakt</a>
+              <a class="nav-link" href="/kontakt.html">Kontakt</a>
             </li>
           </ul>
           <!-- CTA  -->
-          <div class="btn btn-primary intencion
-                 d-block d-lg-inline-block
-                 mx-auto mx-lg-0         
-                 my-4 my-lg-0">
+          <div
+            class="btn btn-primary intencion d-block d-lg-inline-block mx-auto mx-lg-0 my-4 my-lg-0"
+          >
             <span>Intencje</span>
           </div>
         </div>
       </div>
     </nav>
-
-    <!-- Sekcja Hero -->
-      <header class="splash container">
-         <div class="img-wrap">
-          <img src="./assets/img/sw.Krzysztof_barok.png" alt="św. Krzysztof" class="img-fluid mb-3" />
-        </div>
-        <div class="splash-inner container">
-          <h1 class="page-title">
-           Codzienność  <br>
-           w rytmie 
-            <br>
-            modlitwy
-          </h1>
-          <div class="logo mb-3">
-            <!-- <img src="./assets/img/wspolnota swietego krzysztofa logo.jpg" alt=""> -->
-            <p class="lead">Wspólnota Świętego Krzysztofa</p>
-          </div>
-          <a href="kontakt.html" class="btn btn-primary">Skontaktuj się</a>
-
-        </div>
-       
-      </header>
-
     <!-- Sekcje home -->
-    <section id="home" class="about py-5">
-      <div class="container">
-        <h2>O nas</h2>
-        <div class="d-flex gap-3 flex-wrap">
-          <button class="btn btn-primary">Primary</button>
-          <button class="btn btn-secondary">Secondary</button>
-          <button class="btn btn-outline">Outline</button>
-          <button class="btn" disabled>Disabled</button>
-          <button class="btn btn-underline">Underline</button>
+    <section id="home" class="home">
+      <header class="splash" id="splash">
+        <div class="splash-inner container">
+          <h1 class="fw-bold page-title">
+            Wspólnota <br />Świętego <br />Krzysztofa
+          </h1>
+          <div class="intro-section">
+            <p class="cta-text">
+              Chcesz nas lepiej poznać? <span class="line-separator"></span>
+            </p>
+            <a href="o-nas.html" class="btn btn-primary">przeczytaj o nas</a>
+          </div>
         </div>
+        <div class="splash-image">
+          <img
+            src="./dist/img/splash.jpg"
+            alt="Obraz Świętego Krzysztofa z Jezusem na ramieniu"
+            class="imgage-desctop"
+          />
+          <img
+            src="./dist/img/sw.Krzysztof_barok.png"
+            alt="Obraz Świętego Krzysztofa z Jezusem na ramieniu"
+            class="imgage-small"
+          />
+        </div>
+      </header>
+    </section>
+
+    <!-- Quote section -->
+    <section class="py-5 text-center containe" id="quote">
+      <div >
+        <h2 class="fw-semibold">
+          Long heading is what you see here in this feature section
+        </h2>
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
       </div>
     </section>
-    <section class="section">
-      <div class="container">
-        <h2>Inputs</h2>
-        <div
-          class="grid"
-          style="flex-direction: column; gap: 2rem; max-width: 320px"
-        >
-          <!-- Default -->
-          <div class="input-group">
-            <label class="label">Default</label>
-            <input type="text" placeholder="Placeholder" />
-            <span class="helper">Helper text</span>
+
+    <!-- Cards section -->
+    <section class="py-5 cards-section " id="cards">
+      <div class="row g-4 container">
+        <!-- 6 repeating cards -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100">
+            <div class="bg-secondary bg-opacity-25" style="height: 200px"></div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Jak działa nasza wspólnota: duchowość, historia i zaangażowanie
+                w służbie.
+              </h5>
+              <p class="card-text text-muted">Dowiedz się →</p>
+            </div>
           </div>
-          <!-- Hover -->
-          <div class="input-group">
-            <label class="label">Hover</label>
-            <input
-              type="text"
-              placeholder="Placeholder"
-              style="border-color: #c7ab6c"
-            />
-            <span class="helper">Helper text</span>
+        </div>
+        <!-- powtórz powyższy div 5 razy z tym samym stylem lub różnym tekstem -->
+        <!-- przykład ostatniego: -->
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100">
+            <div class="bg-secondary bg-opacity-25" style="height: 200px"></div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Odkryj naszą misję i wartości, które nas prowadzą.
+              </h5>
+              <p class="card-text text-muted">Dowiedz się →</p>
+            </div>
           </div>
-          <!-- Active -->
-          <div class="input-group">
-            <label class="label">Active</label>
-            <input
-              type="text"
-              placeholder="Placeholder"
-              style="border-color: #c7ab6c"
-            />
-            <span class="helper">Helper text</span>
+        </div>
+         <div class="col-md-6 col-lg-6">
+          <div class="card h-100">
+            <div class="bg-secondary bg-opacity-25" style="height: 200px"></div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Odkryj naszą misję i wartości, które nas prowadzą.
+              </h5>
+              <p class="card-text text-muted">Dowiedz się →</p>
+            </div>
           </div>
-          <!-- Error -->
-          <div class="input-group error">
-            <label class="label">Error</label>
-            <input type="text" placeholder="Placeholder" class="error" />
-            <span class="helper">Helper text</span>
+        </div>
+         <div class="col-md-6 col-lg-6">
+          <div class="card h-100">
+            <div class="bg-secondary bg-opacity-25" style="height: 200px"></div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Odkryj naszą misję i wartości, które nas prowadzą.
+              </h5>
+              <p class="card-text text-muted">Dowiedz się →</p>
+            </div>
           </div>
-          <!-- Disabled -->
-          <div class="input-group">
-            <label class="label">Disabled</label>
-            <input type="text" placeholder="Placeholder" disabled />
+        </div>
+         <div class="col-md-6 col-lg-6">
+          <div class="card h-100">
+            <div class="bg-secondary bg-opacity-25" style="height: 200px"></div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Odkryj naszą misję i wartości, które nas prowadzą.
+              </h5>
+              <p class="card-text text-muted">Dowiedz się →</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6 col-lg-6">
+          <div class="card h-100">
+            <div class="bg-secondary bg-opacity-25" style="height: 200px"></div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Odkryj naszą misję i wartości, które nas prowadzą.
+              </h5>
+              <p class="card-text text-muted">Dowiedz się →</p>
+            </div>
           </div>
         </div>
       </div>
@@ -164,10 +186,6 @@
     <footer class="bg-dark text-white py-4">
       <div class="container text-center">&copy; 2025 Monastyr</div>
     </footer>
-    <script
-      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-      defer
-    ></script>
-    <script src="../js/main.js" defer></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
