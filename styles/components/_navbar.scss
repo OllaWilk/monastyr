@@ -6,8 +6,9 @@
   z-index: 1000;
   position: fixed;
 
+
   .logo-wrap {
-    height: 80px;
+    height: auto;
     width: 80px;
 
     img {
@@ -16,7 +17,12 @@
       object-fit: cover;
     }
   }
-
+  
+  .navbar-nav {
+    max-height: 80vh;
+    overflow: auto;
+  }
+ 
   .nav-link {
     color: v.$grey-color;
     margin: 0 v.$spacing-sm;
@@ -24,11 +30,19 @@
     &:hover {
       color: v.$primary-color;
     }
+
+    @media (max-width: 768px) {
+      margin: 10px;
+    }
   }
 
   .intencion {
     width: 140px;
     align-self: center;
+   
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   .navbar-toggler {
@@ -44,6 +58,29 @@
   }
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999; 
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; 
+}
+
 // Custom SVG for the toggler icon when collapsed
 // This is used to replace the default Bootstrap icon with a custom one
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
@@ -51,3 +88,4 @@
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke="%23fff" stroke-width="2" ><path d="M3 3l18 18M21 3l-18 18"/></svg>');
   filter: none;
 }
+

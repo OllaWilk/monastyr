@@ -1,7 +1,7 @@
 @use "../variables" as v;
 
 #splash {
-  height: calc(100vh - 80px); // Adjusting for the height of the navbar;
+  height: 100vh; // Adjusting for the height of the navbar;
   position: relative;
   display: flex;
   align-items: center;
@@ -13,7 +13,6 @@
     flex-direction: column;
     overflow: visible;
     height: auto;
-   
   }
 
   .splash-inner {
@@ -75,9 +74,8 @@
       min-height: 100vh;
       padding: 5rem 0;;
       top: 100%;
-      width: 80%;
-      border-radius: v.$border-radius;
-      
+      width: 90%;
+
     }
 
     .imgage-desctop {
@@ -97,6 +95,10 @@
       height: 100%;
       object-fit: cover;
       object-position: top;
+      
+      border-radius: 0.6rem;
+      border: 1px solid v.$gold-color-light;    
+      box-shadow: v.$box-shadow; 
 
       @media (max-width: 768px) {
         display: block;

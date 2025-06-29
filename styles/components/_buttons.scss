@@ -19,6 +19,10 @@
   &:hover   { background:v.$gold-color-light;   border: 2px solid transparent; color:v.$black-color;}
   &:focus   { outline: 2px solid v.$gold-color-light; outline-offset: 2px; }
   &:disabled{ background:v.$light-grey-color; color:v.$black-color; cursor: not-allowed;  border: 2px solid v.$light-grey-color;}
+
+    @media (max-width: 768px) {
+    width: auto;
+  }
 }
 
 .btn-secondary {
