@@ -1,5 +1,6 @@
 @use "../variables" as v;
 
+
 #splash {
   height: 100vh; // Adjusting for the height of the navbar;
   position: relative;
@@ -18,7 +19,7 @@
   .splash-inner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     gap: 20px;
 
@@ -37,6 +38,7 @@
       font-style: italic;
       font-weight: bold;
       font-size: 52px;
+
     }
 
     .cta-text {
@@ -107,46 +109,54 @@
   }
 }
 
-#quote,
-#cards {
-  background-color: v.$background-color;
-}
-
 #quote {
+  background-color: v.$background-color;
   padding: 112px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+  position: relative;
+
 
   .quote-heading {
-    font-size: 40px;
     font-weight: bold;
     line-height: 120%;
-    max-width: 768px;
-    text-align: center;
+    max-width: 760px;
+    text-align: left;
     color: v.$gold-color-light;
+    margin-bottom: 50px;
 
     @media (max-width: 768px) {
-      width: 90%;
+      width: 100%;
+      max-width: 1200px;
     }
   }
+  
   .text-quote {
     line-height: 150%;
-    font-size: 18px;
-    max-width: 768px;
+    text-align: right;
 
+    
     @media (max-width: 768px) {
-      width: 90%;
+      width: 100%;
+      max-width: 1200px;
+
     }
   }
 }
 
 #cards {
-  padding: 112px 0;
+  background-color: transparent;
+  position: relative;
+
+  .courtain {
+    position: absolute;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+  }
 
   .custom-card-row {
     row-gap: 80px;
+      padding: 112px 0;
+
   }
 }

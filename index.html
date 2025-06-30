@@ -73,10 +73,10 @@
     </nav>
     <!-- Backdrop -->
     <div id="backdrop" class="backdrop"></div>
+
     <!--  home -->
-    <section id="home" class="home">
-      <header class="splash" id="splash">
-        <div class="splash-inner container">
+    <section id="splash" class="home  ">
+        <header class="splash-inner container "  style="--distance: -100vw;">
           <h1 class="fw-bold page-title">
             Wspólnota <br />Świętego <br />Krzysztofa
           </h1>
@@ -86,7 +86,7 @@
             </p>
             <a href="o-nas.html" class="btn btn-primary">przeczytaj o nas</a>
           </div>
-        </div>
+        </header>
         <div class="splash-image">
           <img
             src="/img/splash.jpg"
@@ -99,28 +99,30 @@
             class="imgage-small"
           />
         </div>
-      </header>
     </section>
 
     <!-- Quote section -->
-    <section class="text-center" id="quote">
-      <h2 class="quote-heading">
-        Jesteśmy wspólnotą ekumeniczną, wpatrującą się w Jezusa Miłosiernego,<br />
-        służącą wszystkim, a zwłaszcza tym, co są na peryferiach.
-      </h2>
-      <p class="text-quote">
-        Zawsze się radujcie. Nieustannie się módlcie,<br />
-        za wszystko dziękujcie, gdyż taka jest wola<br />
-        Boga w Jezusie Chrystusie względem was.<br />
-        <strong>1 Tes 5,16–18</strong>
-      </p>
+    <section  id="quote">
+      <div class="container  ">
+        <h2 class="quote-heading animate" style="--distance: -100vw;">
+          Jesteśmy wspólnotą ekumeniczną, wpatrującą się w Jezusa Miłosiernego,<br />
+          służącą wszystkim, a zwłaszcza tym, co są na peryferiach.
+        </h2>
+        <p class="text-quote animate" style="--distance: 100vw;">
+          Zawsze się radujcie. Nieustannie się módlcie,<br />
+          za wszystko dziękujcie, gdyż taka jest wola<br />
+          Boga w Jezusie Chrystusie względem was.<br />
+          <strong>1 Tes 5,16–18</strong>
+        </p>
+      </div>
     </section>
 
     <!-- Cards section -->
-    <section class=" cards-section" id="cards">
-      <div class="row  container custom-card-row">
+    <section class="cards-section animate hero hero-3" id="cards">
+      <div id="courtain" class="courtain"></div>
+      <div class="row  container custom-card-row animate">
         <!-- 6 repeating cards -->
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-6 col-lg-6 animate" >
           <div class="card h-100">
             <div class="bg-secondary bg-opacity-25" style="height: 320px"></div>
             <div class="card-body">
@@ -134,7 +136,7 @@
         </div>
         <!-- powtórz powyższy div 5 razy z tym samym stylem lub różnym tekstem -->
         <!-- przykład ostatniego: -->
-        <div class="col-md-6 col-lg-6">
+        <div class="col-md-6 col-lg-6 animate">
           <div class="card h-100">
             <div class="bg-secondary bg-opacity-25" style="height: 320px"></div>
             <div class="card-body">

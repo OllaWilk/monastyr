@@ -24,13 +24,11 @@ body {
   margin-right: auto;
 
   @media (max-width: 768px) {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    width: 90%;
   }
 
   @media (max-width: 480px) {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    width: 90%;
   }
 }
 
