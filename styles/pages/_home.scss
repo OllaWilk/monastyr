@@ -1,14 +1,13 @@
 @use "../variables" as v;
 
-
 #splash {
-  height: 100vh; // Adjusting for the height of the navbar;
+  height: calc(100vh - 80px); // Adjusting for the height of the navbar;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
-  padding-top: 80px;
+  // padding-top: 80px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -38,7 +37,6 @@
       font-style: italic;
       font-weight: bold;
       font-size: 52px;
-
     }
 
     .cta-text {
@@ -64,7 +62,7 @@
 
   .splash-image {
     position: fixed;
-    padding-top: 80px;
+    // padding-top: 80px;
     top: 0;
     width: 100%;
     height: 100vh;
@@ -113,10 +111,11 @@
   background-color: v.$background-color;
   padding: 112px 0;
   position: relative;
-
+  overflow: hidden;
 
   .quote-heading {
-    font-weight: bold;
+    font-weight: lighter;
+
     line-height: 120%;
     max-width: 760px;
     text-align: left;
@@ -128,35 +127,131 @@
       max-width: 1200px;
     }
   }
-  
+
   .text-quote {
     line-height: 150%;
     text-align: right;
 
-    
     @media (max-width: 768px) {
       width: 100%;
       max-width: 1200px;
-
     }
   }
 }
 
 #cards {
-  background-color: transparent;
-  position: relative;
+  background-color: v.$background-color;
+  min-height: 100vh;
+  padding: 0 0 60px 0;
+  text-transform: uppercase;
 
-  .courtain {
-    position: absolute;
-    background-color: black;
-    opacity: 0.6;
-    width: 100%;
-    height: 100%;
+  .section-title {
+    color: v.$light-color;
+    font-weight: lighter;
+    font-size: 40px;
+    text-transform: uppercase;
   }
 
-  .custom-card-row {
-    row-gap: 80px;
-      padding: 112px 0;
+  .announcement-card-1,
+  .announcement-card-2,
+  .announcement-card-3,
+  .announcement-card-4 {
+    border: 1px solid v.$primary-color;
+    border-radius: v.$border-radius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
 
+    .card-title {
+      font-family: v.$font-body;
+      font-size: 1rem;
+      font-weight: lighter;
+    }
+
+    .card-more {
+      color: v.$light-color;
+      transition: 0.2s linear;
+      text-align: right;
+      width: 100%;
+
+      &:hover {
+        color: v.$primary-color;
+      }
+    }
   }
+
+  .announcement-card-1 {
+    height: 580px;
+
+    @media (max-width: 992px) {
+      height: auto;
+    }
+  }
+
+  .announcement-card-2,
+  .announcement-card-3,
+  .announcement-card-4 {
+    height: 280px;
+
+    @media (max-width: 992px) {
+      height: auto;
+    }
+  }
+
+  .announcement-card-2 {
+    .img-wrap {
+      width: 100%;
+      height: 100px;
+      border-radius: 60px;
+        overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .announcement-card-3 {
+    height: 280px;
+  }
+
+  .announcement-card-4 {
+    height: 280px;
+  }
+  .announcement-card {
+    display: flex;
+    flex-direction: column;
+
+    .cart-wrapper {
+      display: flex;
+    }
+  }
+
+
+  .announcement-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .cart-wrapper {
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 2rem;
+  }
+
+
 }
