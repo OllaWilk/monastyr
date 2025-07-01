@@ -1,0 +1,62 @@
+@use "../variables" as v;
+
+#footer {
+  background-color: v.$black-color;
+  padding: 60px 0;
+
+  .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    #footer-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      ul {
+        display: flex;
+        padding: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        li {
+          list-style: none;
+
+          &:hover {
+            color: v.$primary-color;
+          }
+        }
+      }
+    }
+
+    .logo-wrap {
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+      color: v.$gold-color-light;
+
+      img {
+        width: 100px;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+#footer .social-media img {
+  width: 24px;
+  height: 24px;
+
+}
+
+#footer .social-media img:hover {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+

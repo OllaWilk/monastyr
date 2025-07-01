@@ -4,7 +4,6 @@
   background-color: v.$black-color;
   width: 100%;
   z-index: 1000;
-  // position: fixed;
 
 
   .logo-wrap {
@@ -21,6 +20,7 @@
   .navbar-nav {
     max-height: 80vh;
     overflow: auto;
+    gap: 2rem;
   }
  
   .nav-link {
@@ -39,7 +39,7 @@
   .intencion {
     width: 140px;
     align-self: center;
-   
+
     @media (max-width: 768px) {
       width: 100%;
     }
